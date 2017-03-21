@@ -144,12 +144,12 @@ Your `package.json` should now look like this:
 
 4: Now in the same repo you can run `npm link` to install the script on your system. This creates a symlink to your project so that you can run the project whilst working on it, with no need to keep reinstalling it over and over again.
 
-5: Now, move back into lesson-1 and try out...
+5: Now, move into a different directory and try out...
 
 ```
 your-name-here-cat file
 ```
 
-_Does your command work regardless of where you are in the filesystem? If not, how could you fix that?_
+_Does your command work regardless of where your are in the filesystem? If not, how could you modify it to make it work?_
 
 ### Proceed to [Lesson 2 ->](./lesson-2.md)
