@@ -12,10 +12,10 @@ if (redirect == '>') {
   // EITHER
   readStream.pipe(writeStream);
   // OR
-  readStream.on('data', function(chunk) {
-    console.log(chunk);
-    writeStream.write(chunk);
-  });
+  // readStream.on('data', function(chunk) {
+  //   console.log(chunk);
+  //   writeStream.write(chunk);
+  // });
 }
 else {
   var readStream = fs.createReadStream(readFile);
