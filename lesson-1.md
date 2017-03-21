@@ -96,7 +96,7 @@ Your task is to modify your existing `ls` command in `ls.js` so that it can acce
 
 Calling `node ls.js -ex js` from the lesson-1 folder of this repo should print:
 
-`cat.js   grep.js`
+`cat.js   ls.js`
 
 ### Exercise 1d - Making your script executable
 

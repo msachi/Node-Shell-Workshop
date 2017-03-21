@@ -167,12 +167,9 @@ of it to `write_file` instead.
 of a write stream, this is called 'piping.' Piping in node is done using `stream.pipe()` method:*
 
 ```javascript
-var readStream = fs.createReadStream('path_to_read_file');
-var writeStream = fs.createWriteStream('path_to_write_file');
-
 readStream.pipe(writeStream);
 ```
-*What this code snippet means is every time a new `chunk` of `read_file` gets read by
+*Every time a new `chunk` of `read_file` gets read by
 `readStream` it will immediately be redirected to become the input of `writeStream`. This input
 will get written to `write_file`.*
 
@@ -210,14 +207,8 @@ If `'>>'` is provided as an argument followed by a file as another argument it w
 instead of outputting the contents of `read_file` to the terminal, append
 it to `write_file` instead.
 
-*Hint: There are multiple ways of solving this. `fs.createReadStream` and `fs.createWriteStream`
-can be passed a flags object as a second argument. In particular:*
-
-```javascript
-var writeStream = fs.createWriteStream('path_to_write_file', { 'flags': 'a' })
-```
-
-*allows write streams to append instead of write content.*
+*Hint: `fs.createReadStream` and `fs.createWriteStream`
+can be passed a flags object as a second argument.*
 
 ### :checkered_flag: That's the end of the workshop! Congratulations! :checkered_flag:
 
